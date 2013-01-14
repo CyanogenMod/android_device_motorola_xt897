@@ -54,7 +54,6 @@ etc/UserPolicy.xml
 #HAL
 lib/hw/gps.default.so
 lib/hw/camera.msm8960.so
-lib/hw/nfc.MSM8960.so
 lib/hw/sensorhub.msm8960.so
 lib/hw/sensors.msm8960.so
 lib/hw/sensors.oem.so
