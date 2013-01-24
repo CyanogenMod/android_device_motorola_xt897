@@ -358,10 +358,6 @@ service iprenew_bnep0 /system/bin/dhcpcd -n
 #    group qcom_oncrpc
 #    oneshot
 
-service dhcpcd_bnep0 /system/bin/dhcpcd -G
-    disabled
-    oneshot
-
 service gpsone_daemon /system/bin/gpsone_daemon
     class late_start
     user system
