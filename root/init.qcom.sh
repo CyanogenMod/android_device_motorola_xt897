@@ -34,26 +34,29 @@ target=`getprop ro.board.platform`
 start_sensors()
 {
     mkdir -p /data/system/sensors
+    touch /data/system/sensors/settings
     chmod 775 /data/system/sensors
+    chmod 664 /data/system/sensors/settings
 
     mkdir -p /data/misc/sensors
     chmod 775 /data/misc/sensors
-    
-    echo "start sensors"
-    rm -f /data/app/sensor_ctl_socket
-    start sensors
 
-    ## sleep up to 5 seconds in background to be sure the socket is created
-    ## and change the permission
-    (for i in 1 2 3 4 5; do
-        if [ -e /data/app/sensor_ctl_socket ]; then
-            chmod 777 /data/app/sensor_ctl_socket
-            echo fixing /data/app/sensor_ctl_socket permission
-            break;
-        else
-            sleep 1
-        fi
-    done) &
+    if [ ! -s /data/system/sensors/settings ]; then
+        # If the settings file is empty, enable sensors HAL
+        # Otherwise leave the file with it's current contents
+        echo 1 > /data/system/sensors/settings
+    fi
+    start sensors
+}
+
+start_battery_monitor()
+{
+	chown root.system /sys/module/pm8921_bms/parameters/*
+	chmod 0660 /sys/module/pm8921_bms/parameters/*
+	mkdir -p /data/bms
+	chown root.system /data/bms
+	chmod 0770 /data/bms
+	start battery_monitor
 }
 
 baseband=`getprop ro.baseband`
@@ -79,14 +82,15 @@ case "$baseband" in
         start gpsone_daemon
         start bridgemgrd
 esac
-case "$target" in
-        "msm7630_surf" | "msm8660" | "msm8960")
-        start quipc_igsn
-esac
-case "$target" in
-        "msm7630_surf" | "msm8660" | "msm8960")
-        start quipc_main
-esac
+
+# BEGIN Motorola, hwqc67, 8/31/2012, IKJBREL1-3753
+#case "$target" in
+#        "msm8960")
+#        start location_mq
+#        start xtwifi_inet
+#        start xtwifi_client
+#esac
+# END IKJBREL1-3753
 
 case "$target" in
     "msm7630_surf" | "msm7630_1x" | "msm7630_fusion")
@@ -105,14 +109,14 @@ case "$target" in
         esac
         ;;
     "msm8960")
-        case "$baseband" in
-            "msm")
-                start_sensors;;
+        start_sensors
         esac
 
         platformvalue=`cat /sys/devices/system/soc/soc0/hw_platform`
         case "$platformvalue" in
              "Fluid")
+                 start profiler_daemon;;
+             "Liquid")
                  start profiler_daemon;;
         esac
         ;;
