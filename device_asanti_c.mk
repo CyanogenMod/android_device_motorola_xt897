@@ -146,7 +146,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 #telephony
 #note: Sim card models do not have correct band for LTE, so turn it off
 PRODUCT_PROPERTY_OVERRIDES += \
-	telephony.lteOnGsmDevice=0 \
 	ro.telephony.ril.v3=signalstrength
 
 PRODUCT_COPY_FILES += \
