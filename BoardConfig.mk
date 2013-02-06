@@ -36,6 +36,9 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# Dex
+WITH_DEXPREOPT := true
+
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/moto/msm8960-common
 TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
