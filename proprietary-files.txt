@@ -27,13 +27,6 @@ bin/tcmd
 bin/tcmdhelp
 bin/ftmdaemon
 bin/ftmipcd
-bin/xtwifi-client
-bin/xtwifi-inet-agent
-bin/v4l2-qcamera-app
-bin/wdsdaemon
-bin/sapd
-bin/qosmgr
-bin/location-mq
 bin/curl
 
 #qcom bins
@@ -54,7 +47,6 @@ etc/encrypt.tab
 etc/quipc.conf
 etc/thermald.conf
 etc/wifi/hostapd_default.conf
-etc/xtwifi.conf
 etc/OperatorPolicy.xml
 etc/UserPolicy.xml
 
@@ -139,8 +131,6 @@ lib/libqmi_csi.so
 lib/libqmi_encdec.so
 lib/libqmiservices.so
 lib/libqmi.so
-lib/libqmi_client_qmux.so
-lib/libqcci_legacy.so
 lib/libqsap_sdk.so
 lib/libquipc_os_api.so
 lib/libquipc_ulp_adapter.so
@@ -162,9 +152,7 @@ lib/libxt_v02.so
 lib/pp_proc_plugin.so
 lib/qnet-plugin.so
 lib/tcp-connections.so
-lib/libxtwifi_ulp_adaptor.so
 lib/libwfdhdcpcp.so
-lib/libwfdmmsink.so
 lib/libwfdmmsrc.so
 lib/libwfdmmutils.so
 lib/libwfdnative.so
@@ -173,19 +161,12 @@ lib/libwfdsm.so
 lib/libwfduibcinterface.so
 lib/libwfduibcsrc.so
 lib/libwfduibcsrcinterface.so
-lib/libsurround_proc.so
-lib/libqmi_csvt_srvc.so
-lib/libqdMetaData.so
 lib/libnativedrm1.so
 lib/libmmwfdinterface.so
 lib/libmmwfdsinkinterface.so
 lib/libmmwfdsrcinterface.so
 lib/libgsl.so
-lib/libdataencrypt_openssl.so
-lib/libcsd-client.so
-lib/libcnefeatureconfig.so
 lib/libcurl.so
-vendor/firmware/libpn544_fw.so
 
 #sensors
 bin/sensors.qcom
@@ -223,3 +204,5 @@ etc/firmware/vidc.b03
 etc/firmware/vidcfw.elf
 etc/firmware/vidc.mdt
 
+#touchscreen
+etc/firmware/atmxt-r2.tdat

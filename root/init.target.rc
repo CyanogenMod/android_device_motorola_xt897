@@ -28,7 +28,6 @@
 #
 
 import init.mmi.usb.rc
-import init.safestrap.rc
 
 #start camera server as daemon
 service qcamerasvr /system/bin/logwrapper /system/bin/qcamerasrvwrapper.sh
@@ -713,10 +712,3 @@ service p2p_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant \
     disabled
     oneshot
 
-service location-mq /system/bin/logwrapper /system/bin/location-mq
-    class late_start
-    user root
-
-service xtwifi-inet-agent /system/bin/logwrapper /system/bin/xtwifi-inet-agent
-    class late_start
-    user root
