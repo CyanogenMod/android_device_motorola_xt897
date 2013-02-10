@@ -40,7 +40,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 WITH_DEXPREOPT := true
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/moto/msm8960-common
+TARGET_KERNEL_SOURCE := kernel/moto/asanti_c
 TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
 
 # copy all kernel modules under the "kernel/modules" directory to system/lib/modules
