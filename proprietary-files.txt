@@ -53,6 +53,7 @@ etc/UserPolicy.xml
 #HAL
 lib/hw/gps.default.so
 lib/hw/camera.msm8960.so
+lib/hw/lights.msm8960.so
 lib/hw/nfc.MSM8960.so
 lib/hw/sensorhub.msm8960.so
 lib/hw/sensors.msm8960.so
@@ -206,3 +207,7 @@ etc/firmware/vidc.mdt
 
 #touchscreen
 etc/firmware/atmxt-r2.tdat
+
+#wcd9310
+etc/firmware/wcd9310/wcd9310_anc.bin
+etc/firmware/wcd9310/wcd9310_mbhc.bin
