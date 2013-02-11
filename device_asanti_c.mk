@@ -54,10 +54,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/wlanprima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
 	$(LOCAL_PATH)/proprietary/wlanprima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
-#touchscreen
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/melfas_45_7_15.fw:system/etc/firmware/melfas_45_7_15.fw
-
 # EGL config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/egl.cfg:system/lib/egl/egl.cfg
