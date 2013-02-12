@@ -36,13 +36,13 @@ PRODUCT_COPY_FILES += \
 
 #media
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml \
+	$(LOCAL_PATH)/config/audio_policy.conf:system/etc/audio_policy.conf \
+	$(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml \
 	$(LOCAL_PATH)/config/media_codecs.xml:system/etc/media_codecs.xml
 
 #audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
+	$(LOCAL_PATH)/config/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
 
 #config
 PRODUCT_COPY_FILES += \
@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 
 # EGL config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/egl.cfg:system/lib/egl/egl.cfg
+	$(LOCAL_PATH)/config/egl.cfg:system/lib/egl/egl.cfg
 
 #adreno
 PRODUCT_COPY_FILES += \
@@ -108,17 +108,36 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=240 \
+	ro.sf.compbypass.enable=1 \
+	dev.pm.dyn_samplingrate=1 \
 	debug.egl.hw=1 \
 	debug.sf.hw=1 \
+	debug.composition.type=dyn \
 	debug.gr.numframebuffers=3 \
 	persist.sys.ui.hw=true \
 	debug.composition.type=c2d \
 	debug.enabletr=0 \
 	ro.hwui.text_cache_width=2048
 
+# QC CnE
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.cne.UseCne=none \
+	persist.cne.UseSwim=false \
+	persist.cne.bat.range.low.med=30 \
+	persist.cne.bat.range.med.high=60 \
+	persist.cne.loc.policy.op=/system/etc/OperatorPolicy.xml \
+	persist.cne.loc.policy.user=/system/etc/UserPolicy.xml \
+	persist.cne.bwbased.rat.sel=false \
+	persist.cne.snsr.based.rat.mgt=false \
+	persist.cne.bat.based.rat.mgt=false \
+	persist.cne.rat.acq.time.out=30000 \
+	persist.cne.rat.acq.retry.tout=0 \
+	persist.cne.nsrm.mode=false
+
 # Radio and Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libril-qc-qmi-1.so \
+	rild.libargs=-d /dev/smd0 \
 	ril.subscription.types=NV,RUIM \
 	keyguard.no_require_sim=true \
 	ro.use_data_netmgrd=true \
@@ -130,29 +149,34 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qc.sdk.audio.fluencetype=fluence \
 	persist.audio.handset.mic=digital \
 	ro.config.vc_call_vol_steps=7 \
-	persist.timed.enable=true
+	persist.timed.enable=true \
+	ro.telephony.ril.v3=signalstrength \
+	persist.rild.nitz_plmn= \
+	persist.rild.nitz_long_ons_0= \
+	persist.rild.nitz_long_ons_1= \
+	persist.rild.nitz_long_ons_2= \
+	persist.rild.nitz_long_ons_3= \
+	persist.rild.nitz_short_ons_0= \
+	persist.rild.nitz_short_ons_1= \
+	persist.rild.nitz_short_ons_2= \
+	persist.rild.nitz_short_ons_3=
 
 # IDC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
-    $(LOCAL_PATH)/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
-    $(LOCAL_PATH)/idc/qwerty.idc:system/usr/idc/qwerty.idc \
-    $(LOCAL_PATH)/idc/keypad_8960.idc:system/usr/idc/keypad_8960.idc
+	$(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
+	$(LOCAL_PATH)/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
+	$(LOCAL_PATH)/idc/qwerty.idc:system/usr/idc/qwerty.idc \
+	$(LOCAL_PATH)/idc/keypad_8960.idc:system/usr/idc/keypad_8960.idc
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # keylayouts
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
+	$(LOCAL_PATH)/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl
 
 # Keychars
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keychars/keypad_8960.kcm:system/usr/keychars/keypad_8960.kcm \
-
-#telephony
-#note: Sim card models do not have correct band for LTE, so turn it off
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.telephony.ril.v3=signalstrength
+	$(LOCAL_PATH)/keychars/keypad_8960.kcm:system/usr/keychars/keypad_8960.kcm
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf \
