@@ -64,6 +64,39 @@
         <item>7</item>
     </integer-array>
 
+    <!-- String containing the apn value for tethering.  May be overriden by secure settings
+         TETHER_DUN_APN.  Value is a comma separated series of strings:
+         "name,apn,proxy,port,username,password,server,mmsc,mmsproxy,mmsport,mcc,mnc,auth,type"
+         note that empty fields can be ommitted: "name,apn,,,,,,,,,310,260,,DUN" -->
+    <string translatable="false" name="config_tether_apndata"></string>
+
+    <!-- The number of degrees to rotate the display when the keyboard is open. -->
+    <integer name="config_lidOpenRotation">90</integer>
+
+    <!-- The number of degrees to rotate the display when the device is in a desk dock.
+         A value of -1 means no change in orientation by default. -->
+    <integer name="config_deskDockRotation">90</integer>
+
+    <!-- The number of degrees to rotate the display when the device is in a car dock.
+         A value of -1 means no change in orientation by default. -->
+    <integer name="config_carDockRotation">-1</integer>
+
+    <!-- Indicate whether the lid state impacts the accessibility of
+         the physical keyboard.  0 means it doesn't, 1 means it is accessible
+         when the lid is open, 2 means it is accessible when the lid is
+         closed.  The default is 1. -->
+    <integer name="config_lidKeyboardAccessibility">1</integer>
+
+    <!-- Indicate whether the lid state impacts the accessibility of
+         the physical keyboard.  0 means it doesn't, 1 means it is accessible
+         when the lid is open, 2 means it is accessible when the lid is
+         closed.  The default is 0. -->
+    <integer name="config_lidNavigationAccessibility">1</integer>
+
+    <!-- Sets whether menu shortcuts should be displayed on panel menus when
+         a keyboard is present. -->
+    <bool name="config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+
     <!-- The VoiceMail default value is displayed to my own number if it is true -->
     <bool name="config_telephony_use_own_number_for_voicemail">true</bool>
 
@@ -71,11 +104,23 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
 
+    <!-- Default color for notification LED. -->
+    <color name="config_defaultNotificationColor">#ff00ff00</color>
+
+    <!-- Default LED on time for notification LED in milliseconds. -->
+    <integer name="config_defaultNotificationLedOn">800</integer>
+
+    <!-- Default LED off time for notification LED in milliseconds. -->
+    <integer name="config_defaultNotificationLedOff">3200</integer>
+
+    <!-- Default value for LED on time when the battery is low on charge in miliseconds -->
+    <integer name="config_notificationsBatteryLedOn">800</integer>
+
+    <!-- Default value for LED off time when the battery is low on charge in miliseconds -->
+    <integer name="config_notificationsBatteryLedOff">3200</integer>
+
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
-
-    <!-- Workaround for devices with broken keyboards -->
-    <bool name="config_forceDisableHardwareKeyboard">true</bool>
 
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
@@ -90,9 +135,6 @@
 
     <!-- Default interface to monitor data use -->
     <string name="config_datause_iface">rmnet0</string>
-
-
-
 
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">5</integer>
@@ -131,9 +173,9 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessButtonBacklightValues">
-        <item>255</item>
-        <item>255</item>
-        <item>100</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
         <item>0</item>
         <item>0</item>
     </integer-array>
@@ -143,12 +185,15 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
+        <item>140</item>
+        <item>100</item>
+        <item>25</item>
         <item>0</item>
         <item>0</item>
     </integer-array>
+
+    <!-- Enables swipe versus poly-finger touch disambiguation in the KeyboardView -->
+    <bool name="config_swipeDisambiguation">true</bool>
 
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
