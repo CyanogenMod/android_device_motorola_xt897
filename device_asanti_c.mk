@@ -82,9 +82,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/adreno/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so
 
 PRODUCT_LOCALES := en_US
-PRODUCT_LOCALES += xhdpi
+PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 #misc
 PRODUCT_PROPERTY_OVERRIDES += \
