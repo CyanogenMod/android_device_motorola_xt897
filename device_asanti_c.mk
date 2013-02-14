@@ -9,6 +9,10 @@ LOCAL_PATH := device/moto/asanti_c
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+#lights
+PRODUCT_PACKAGES += \
+	lights.msm8960
+
 #scripts
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/scripts/init.goldfish.sh:system/etc/init.goldfish.sh \
