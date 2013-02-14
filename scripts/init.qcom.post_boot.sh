@@ -112,8 +112,8 @@ case "$target" in
      echo 1 > /sys/module/pm_8x60/modes/cpu0/power_collapse/idle_enabled
      echo 1 > /sys/module/pm_8x60/modes/cpu1/power_collapse/idle_enabled
      echo 1 > /sys/module/msm_show_resume_irq/parameters/debug_mask
-     echo "ondemand" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-     echo "ondemand" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+     echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+     echo "interactive" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
      echo 90 > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold
      echo 50000 > /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
      echo 1 > /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy
