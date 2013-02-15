@@ -97,7 +97,7 @@ key 96    NUMPAD_ENTER
 key 97    CTRL_RIGHT
 key 98    NUMPAD_DIVIDE
 key 99    SYSRQ
-key 100   SYM              WAKE_DROPPED
+# key 100 "KEY_RIGHTALT"
 # key 101 "KEY_LINEFEED"
 key 102   MOVE_HOME
 key 103   DPAD_UP

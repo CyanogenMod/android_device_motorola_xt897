@@ -316,13 +316,6 @@ key SLASH {
     ctrl, alt, meta:                    none
 }
 
-key GRAVE {
-    label, number:                      '\''
-    base:                               '\''
-    shift:                              '"'
-    ctrl, alt, meta:                    none
-}
-
 key MINUS {
     label, number:                      '-'
     base:                               '-'
@@ -365,18 +358,18 @@ key SEMICOLON {
     ctrl, alt, meta:                    none
 }
 
+key GRAVE {
+    label:                              '\uef01'
+    base:                               '\uef01'
+    shift, capslock:                    '\uef01'
+    ctrl, alt, meta:                    '\uef01'
+}
+
 key APOSTROPHE {
     label, number:                      '\''
     base:                               '\''
     shift:                              '"'
     ctrl, alt, meta:                    none
-}
-
-key SYM {
-    label:                              '\uEF01'
-    base:                               '\uEF01'
-    shift, capslock:                    '\uEF01'
-    ctrl, alt, meta:                    '\uEF01'
 }
 
 ### Additional charactes ###
