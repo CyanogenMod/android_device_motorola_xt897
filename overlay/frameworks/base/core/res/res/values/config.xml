@@ -306,4 +306,8 @@
          the slider can be opened (for example, in a pocket or purse). -->
     <bool name="config_bypass_keyguard_if_slider_open">true</bool>
 
+    <!-- Flag indicating whether we should enable automatic brightness for
+         the button and keyboard backlights. -->
+    <bool name="config_autoBrightnessButtonKeyboard">false</bool>
+
 </resources>
