@@ -317,9 +317,9 @@ key SLASH {
 }
 
 key GRAVE {
-    label, number:                      '`'
-    base:                               '`'
-    shift:                              '~'
+    label, number:                      '\''
+    base:                               '\''
+    shift:                              '"'
     ctrl, alt, meta:                    none
 }
 
@@ -377,6 +377,32 @@ key SYM {
     base:                               '\uEF01'
     shift, capslock:                    '\uEF01'
     ctrl, alt, meta:                    '\uEF01'
+}
+
+### Additional charactes ###
+
+key DPAD_LEFT {
+    base:                               fallback DPAD_LEFT
+    shift:                              '<'
+    ctrl, alt, meta:                    none
+}
+
+key DPAD_RIGHT {
+    base:                               fallback DPAD_RIGHT
+    shift:                              '>'
+    ctrl, alt, meta:                    none
+}
+
+key DPAD_UP {
+    base:                               fallback DPAD_UP
+    shift:                              '^'
+    ctrl, alt, meta:                    none
+}
+
+key DPAD_DOWN {
+    base:                               fallback DPAD_DOWN
+    shift:                              '|'
+    ctrl, alt, meta:                    none
 }
 
 ### Numeric keypad ###
