@@ -32,8 +32,6 @@
 
 #include <hardware/lights.h>
 
-#define LIGHT_ID_SHIFTKEY "shift"
-
 /******************************************************************************/
 
 static pthread_once_t g_init = PTHREAD_ONCE_INIT;
@@ -41,6 +39,8 @@ static pthread_mutex_t g_lock = PTHREAD_MUTEX_INITIALIZER;
 static struct light_state_t g_notification;
 static struct light_state_t g_battery;
 static int g_attention = 0;
+static int g_back_brightness = 0;
+static int g_kbd_brightness = 0;
 
 /* LED */
 char const*const RED_LED_BLINK = "/sys/class/leds/red/blink";
@@ -50,7 +50,6 @@ char const*const BLUE_LED_FILE = "/sys/class/leds/blue/brightness";
 
 char const*const LCD_FILE = "/sys/class/backlight/lcd-backlight/brightness";
 char const*const KEYBOARD_FILE = "/sys/class/leds/keyboard-backlight/brightness";
-char const*const SHIFTKEY_FILE = "/sys/class/leds/shift-key-light/brightness";
 
 /**
  * device methods
@@ -125,10 +124,15 @@ set_light_backlight(struct light_device_t* dev,
     int err = 0;
     int brightness = rgb_to_brightness(state);
     pthread_mutex_lock(&g_lock);
+    g_back_brightness = brightness;
     err = write_int(LCD_FILE, brightness);
-    // HACK: set keyboard light to the same value
-    if (!err)
+    
+    // set keyboard light to the same value as display
+    if (!err && g_kbd_brightness != 0)
+    {
+        g_kbd_brightness = brightness;
         err = write_int(KEYBOARD_FILE, brightness);
+    }
 
     pthread_mutex_unlock(&g_lock);
     return err;
@@ -141,19 +145,12 @@ set_light_keyboard(struct light_device_t* dev,
     int err = 0;
     int brightness = rgb_to_brightness(state);
     pthread_mutex_lock(&g_lock);
-    err = write_int(KEYBOARD_FILE, brightness);
-    pthread_mutex_unlock(&g_lock);
-    return err;
-}
 
-static int
-set_light_shiftkey(struct light_device_t* dev,
-        struct light_state_t const* state)
-{
-    int err = 0;
-    int brightness = rgb_to_brightness(state);
-    pthread_mutex_lock(&g_lock);
-    err = write_int(SHIFTKEY_FILE, brightness ? 255 : 0);
+    if (brightness && g_back_brightness)
+        brightness = g_back_brightness;
+
+    g_kbd_brightness = brightness;
+    err = write_int(KEYBOARD_FILE, brightness);
     pthread_mutex_unlock(&g_lock);
     return err;
 }
@@ -319,8 +316,6 @@ static int open_lights(const struct hw_module_t* module, char const* name,
         set_light = set_light_attention;
     else if (0 == strcmp(LIGHT_ID_KEYBOARD, name))
         set_light = set_light_keyboard;
-    else if (0 == strcmp(LIGHT_ID_SHIFTKEY, name))
-        set_light = set_light_shiftkey;
     else
         return -EINVAL;
 
