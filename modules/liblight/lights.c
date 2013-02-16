@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 // #define LOG_NDEBUG 0
 #define LOG_TAG "lights"
 
@@ -40,7 +39,7 @@ static struct light_state_t g_notification;
 static struct light_state_t g_battery;
 static int g_attention = 0;
 static int g_back_brightness = 0;
-static int g_kbd_brightness = 0;
+static int g_kbd_on = 0;
 
 /* LED */
 char const*const RED_LED_BLINK = "/sys/class/leds/red/blink";
@@ -128,11 +127,8 @@ set_light_backlight(struct light_device_t* dev,
     err = write_int(LCD_FILE, brightness);
     
     // set keyboard light to the same value as display
-    if (!err && g_kbd_brightness != 0)
-    {
-        g_kbd_brightness = brightness;
+    if (!err && g_kbd_on)
         err = write_int(KEYBOARD_FILE, brightness);
-    }
 
     pthread_mutex_unlock(&g_lock);
     return err;
@@ -145,14 +141,15 @@ set_light_keyboard(struct light_device_t* dev,
     int err = 0;
     int brightness = rgb_to_brightness(state);
     pthread_mutex_lock(&g_lock);
-
-    if (brightness && g_back_brightness)
-        brightness = g_back_brightness;
-
-    g_kbd_brightness = brightness;
-    err = write_int(KEYBOARD_FILE, brightness);
+    g_kbd_on = brightness ? 255 : 0;
+    
+    if (g_kbd_on)
+        err = write_int(KEYBOARD_FILE, g_back_brightness);
+    else
+        err = write_int(KEYBOARD_FILE, 0);
+    
     pthread_mutex_unlock(&g_lock);
-    return err;
+    return 0;
 }
 
 static int
