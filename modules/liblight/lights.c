@@ -149,7 +149,7 @@ set_light_keyboard(struct light_device_t* dev,
         err = write_int(KEYBOARD_FILE, 0);
     
     pthread_mutex_unlock(&g_lock);
-    return 0;
+    return err;
 }
 
 static int
