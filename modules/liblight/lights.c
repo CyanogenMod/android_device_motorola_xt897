@@ -31,7 +31,16 @@
 
 #include <hardware/lights.h>
 
+/* ID for caps lock led */
 #define LIGHT_ID_SHIFTKEY "shift"
+
+/* Keyboard lighting */
+#define KEYBOARD_LIGHT_ENABLED          0x00000001
+#define KEYBOARD_LIGHT_FOLLOWS_SCREEN   0x00000002
+#define KEYBOARD_LIGHT_IGNORE_VALUE     0x00000004
+#define KEYBOARD_LIGHT_IGNORE_MODE      0x00000008
+
+#define KEYBOARD_LIGHT_MODE_MASK        0x00000003
 
 /******************************************************************************/
 
@@ -41,8 +50,9 @@ static struct light_state_t g_notification;
 static struct light_state_t g_battery;
 static int g_attention = 0;
 static int g_back_brightness = 0;
+static int g_kbd_brightness = 0;
 static int g_shift_on = 0;
-static int g_kbd_on = 0;
+static int g_kbd_mode = 0;
 
 /* LED */
 char const*const RED_LED_BLINK = "/sys/class/leds/red/blink";
@@ -129,9 +139,15 @@ set_light_backlight(struct light_device_t* dev,
     pthread_mutex_lock(&g_lock);
     err = write_int(LCD_FILE, brightness);
     
-    // set keyboard light to the same value as display
-    if (!err && g_kbd_on)
-        err = write_int(KEYBOARD_FILE, brightness);
+    // set keyboard light
+    if (!err && (g_kbd_mode & KEYBOARD_LIGHT_ENABLED)) {
+        if (g_kbd_mode & KEYBOARD_LIGHT_FOLLOWS_SCREEN)
+            err = write_int(KEYBOARD_FILE, brightness);
+        else if (brightness == 0 && g_back_brightness != 0)
+            err = write_int(KEYBOARD_FILE, 0);
+        else if (brightness != 0 && g_back_brightness == 0)
+            err = write_int(KEYBOARD_FILE, g_kbd_brightness);
+    }
 
     // see if we should toggle shift
     if (!err && g_shift_on) {
@@ -152,11 +168,23 @@ set_light_keyboard(struct light_device_t* dev,
 {
     int err = 0;
     int brightness = rgb_to_brightness(state);
+    int mode = state->flashMode;
     pthread_mutex_lock(&g_lock);
-    g_kbd_on = brightness > 0;
+
+    if (!(mode & KEYBOARD_LIGHT_IGNORE_MODE)) {
+        g_kbd_mode = mode & KEYBOARD_LIGHT_MODE_MASK;
+        if (!(mode & KEYBOARD_LIGHT_IGNORE_VALUE))
+            g_kbd_brightness = brightness;
+    }
+    else
+        g_kbd_brightness = brightness;
     
-    if (g_kbd_on) {
-        err = write_int(KEYBOARD_FILE, g_back_brightness);
+    if (g_kbd_mode & KEYBOARD_LIGHT_ENABLED) {
+        if (g_kbd_mode & KEYBOARD_LIGHT_FOLLOWS_SCREEN)
+            err = write_int(KEYBOARD_FILE, g_back_brightness);
+        else
+            err = write_int(KEYBOARD_FILE, g_kbd_brightness);
+
         if (!err && g_shift_on)
             err = write_int(SHIFTKEY_FILE, 255);
     } else {
@@ -178,7 +206,7 @@ set_light_shiftkey(struct light_device_t* dev,
     pthread_mutex_lock(&g_lock);
     g_shift_on = brightness > 0;
 
-    if (g_kbd_on && g_shift_on && g_back_brightness > 0)
+    if ((g_kbd_mode & KEYBOARD_LIGHT_ENABLED) && g_shift_on && g_back_brightness > 0)
         err = write_int(SHIFTKEY_FILE, 255);
     else
         err = write_int(SHIFTKEY_FILE, 0);
