@@ -193,7 +193,6 @@ lib/libchromatix_s5k4e1_preview.so
 ##drm
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/libwvdrm_L1.so
-vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
 
 # graphics firmware
