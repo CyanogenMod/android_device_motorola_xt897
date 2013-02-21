@@ -406,7 +406,6 @@ service qcom-post-boot /system/bin/sh /system/etc/init.qcom.post_boot.sh
 
 on property:sys.boot_completed=1
     start qcom-post-boot
-    start loadpreinstalls
 
 service atfwd /system/bin/ATFWD-daemon
     class late_start
@@ -496,9 +495,3 @@ service hcidump /system/bin/sh /system/etc/hcidump.sh
     disabled
     oneshot
 
-service loadpreinstalls /system/bin/logwrapper /system/bin/loadpreinstalls.sh
-    class late_start
-    user system
-    group system
-    disabled
-    oneshot
