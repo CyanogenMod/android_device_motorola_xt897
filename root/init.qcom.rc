@@ -322,11 +322,6 @@ service dhcpcd_usbeth0 /system/bin/logwrapper /system/bin/dhcpcd -BKLG -d
     disabled
     oneshot
 
-service iprenew_usbeth0 /system/bin/dhcpcd -nBK
-    class late_start
-    disabled
-    oneshot
-
 service iprenew_wlan0 /system/bin/logwrapper /system/bin/dhcpcd -n
     class late_start
     disabled

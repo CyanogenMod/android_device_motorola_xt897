@@ -458,7 +458,7 @@ on property:tcmd.utag=1
 
 service tcmd /system/bin/tcmd
     class core
-    group mot_tcmd radio mot_pwric input system log camera graphics mot_accy sdcard_rw audio inet bluetooth wifi compass net_bt_admin mot_tombstone mot_tpapi mount net_raw net_admin mot_whisper media shell mot_usb nfc fm_radio
+    group mot_tcmd radio mot_pwric input system log camera graphics mot_accy sdcard_rw audio inet bluetooth wifi compass net_bt_admin mot_tombstone mot_tpapi mount net_raw net_admin mot_whisper media shell mot_usb nfc
     socket local_tcmd stream 0660 mot_tcmd mot_tcmd
     socket batch_socket stream 0600 mot_tcmd mot_tcmd
     oneshot
