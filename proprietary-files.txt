@@ -52,6 +52,7 @@ etc/OperatorPolicy.xml
 etc/UserPolicy.xml
 
 #HAL
+lib/hw/gps.default.so
 lib/hw/camera.msm8960.so
 lib/hw/sensorhub.msm8960.so
 lib/hw/sensors.msm8960.so
@@ -84,12 +85,16 @@ lib/libFileMux.so
 lib/libfrsdk.so
 lib/libgemini.so
 lib/libgps.so
+lib/libgps.utils.so
 lib/libidl.so
 lib/libimage-jpeg-enc-omx-comp.so
 lib/libimage-omx-common.so
 lib/libimssettings.so
 lib/libllvm-a3xx.so
+lib/libloc_adapter.so
 lib/libloc_api_v02.so
+lib/libloc_eng.so
+lib/libloc_ext.so
 lib/libmm-abl-oem.so
 lib/libmm-abl.so
 lib/libmm-audio-resampler.so
