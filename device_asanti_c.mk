@@ -13,6 +13,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
 	lights.msm8960
 
+#custom settings
+PRODUCT_PACKAGES += \
+	PhotonQParts
+
 #scripts
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/scripts/init.goldfish.sh:system/etc/init.goldfish.sh \

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Photon Q Settings</string>
+
+    <string name="keypad_title">Keyboard</string>
+
+    <string name="pref_keypad_multipress_title">Multipress interval</string>
+    <string name="pref_keypad_multipress_summary">Subsequent key presses within this interval can be used to directly enter alternate characters.\nCurrently set to: %s</string>
+    <string name="pref_keypad_mplang_title">Multipress language</string>
+    <string name="pref_keypad_mplang_summary">Language selection for entering alternate characters via multipress feature.\nCurrently set to: %s</string>
+
+</resources>
