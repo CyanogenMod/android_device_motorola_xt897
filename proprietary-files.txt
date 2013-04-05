@@ -28,7 +28,6 @@ bin/tcmdhelp
 bin/ftmdaemon
 bin/ftmipcd
 bin/curl
-bin/location-mq
 
 #qcom bins
 bin/qseecomd

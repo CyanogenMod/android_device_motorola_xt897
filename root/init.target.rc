@@ -348,7 +348,6 @@ on post-fs-data
 # NFC settings
     setprop ro.nfc.port "I2C"
 
-
 # Set permissions for evfwd module (webtop)
     chown system system /sys/devices/platform/evfwdrel/rel
     chown system system /sys/devices/platform/evfwdkbd/kbd
@@ -712,6 +711,3 @@ service p2p_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant \
     disabled
     oneshot
 
-service location_mq /system/bin/logwrapper /system/bin/location-mq
-    class late_start
-    user root
