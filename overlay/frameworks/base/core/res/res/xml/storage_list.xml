@@ -37,13 +37,9 @@
 
 <StorageList xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- internal storage -->
-    <storage android:mountPoint="/storage/sdcard0"
+    <storage
         android:storageDescription="@string/storage_internal"
-        android:primary="true"
-        android:mtpReserve="100"
-        android:emulated="true"
-        android:removable="false"
-        android:allowMassStorage="false" />
+        android:mtpReserve="100" />
 
     <!-- external SD card -->
     <storage android:mountPoint="/storage/sdcard1"

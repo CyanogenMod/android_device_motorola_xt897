@@ -37,7 +37,7 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Dex
-WITH_DEXPREOPT := true
+# WITH_DEXPREOPT := true
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/moto/asanti_c
@@ -52,4 +52,8 @@ PRODUCT_COPY_FILES += $(shell \
 BOARD_KERNEL_CMDLINE := console=/dev/null androidboot.hardware=qcom user_debug=31 loglevel=1 msm_rtb.filter=0x3F kgsl.mmutype=gpummu zcache
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_FORCE_RAMDISK_ADDRESS := 0x81600000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
+
+#bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+
