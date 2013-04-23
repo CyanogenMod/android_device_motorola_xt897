@@ -44,9 +44,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #telephony
 PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.lteOnGsmDevice=1 \
-	ro.telephony.ril.v3=signalstrength
-	DEVICE_PROVISIONED=1
-  ro.telephony.default_network=3
+	ro.telephony.ril.v3=signalstrength \
+	DEVICE_PROVISIONED=1 \
+	ro.telephony.default_network=3
 
 # IDC
 PRODUCT_COPY_FILES += \
@@ -62,6 +62,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keychars/keypad_8960.kcm:system/usr/keychars/keypad_8960.kcm
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf \
+	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
 
 $(call inherit-product-if-exists, vendor/motorola/xt897/xt897-vendor.mk)
+
