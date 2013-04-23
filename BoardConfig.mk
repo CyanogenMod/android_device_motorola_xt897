@@ -1,46 +1,13 @@
-USE_CAMERA_STUB := true
-
 # inherit from platform common
--include device/moto/msm8960-common/BoardConfigCommon.mk
+-include device/motorola/msm8960-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/moto/asanti_c/BoardConfigVendor.mk
+-include vendor/motorola/xt897/BoardConfigVendor.mk
 
-LOCAL_PATH := device/moto/asanti_c
-
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A00000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1560281088
-BOARD_FLASH_BLOCK_SIZE := 131072
-
-#storage
-BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
-BOARD_VOLD_MAX_PARTITIONS := 40
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
-
-BOARD_HAS_NO_SELECT_BUTTON := true
-# Use this flag if the board has a ext4 partition larger than 2gb
-BOARD_HAS_LARGE_FILESYSTEM := true
-
-COMMON_GLOBAL_CFLAGS += -DQCOM_NO_SECURE_PLAYBACK
-BOARD_EGL_CFG := $(LOCAL_PATH)/config/egl.cfg
-
-# assert
-TARGET_OTA_ASSERT_DEVICE := XT897_us_spr,XT897,xt897,asanti,asanti_c
-
-# Recovery
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
-BOARD_SUPPRESS_EMMC_WIPE := true
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
-TARGET_USERIMAGES_USE_EXT4 := true
-
-# Dex
-# WITH_DEXPREOPT := true
+LOCAL_PATH := device/motorola/xt897
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/moto/asanti_c
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8960-common
 TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
 
 # copy all kernel modules under the "kernel/modules" directory to system/lib/modules
@@ -56,4 +23,3 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 #bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
-

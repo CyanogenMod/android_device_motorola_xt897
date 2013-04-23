@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_asanti_c.mk
+    $(LOCAL_DIR)/full_xt897.mk
