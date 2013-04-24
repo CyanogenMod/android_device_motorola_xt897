@@ -12,7 +12,7 @@ $(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
 LOCAL_PATH := device/motorola/xt897
 
 # xt897 specific overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 #lights
 TARGET_PROVIDES_LIBLIGHT := true
