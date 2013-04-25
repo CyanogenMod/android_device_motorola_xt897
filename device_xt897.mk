@@ -1,7 +1,3 @@
-TARGET_USES_MOTOROLA_COMMON_LIBLIGHT:=false
-TARGET_USES_MOTOROLA_COMMON_IDC:=false
-TARGET_USES_MOTOROLA_COMMON_KEYCHARS:=false
-TARGET_USES_MOTOROLA_COMMON_KEYLAYOUT:=false
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
@@ -13,11 +9,6 @@ LOCAL_PATH := device/motorola/xt897
 
 # xt897 specific overlay
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-#lights
-TARGET_PROVIDES_LIBLIGHT := true
-PRODUCT_PACKAGES += \
-    lights.msm8960
 
 #sqlite3
 PRODUCT_PACKAGES += \
