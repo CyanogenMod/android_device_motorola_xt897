@@ -6,12 +6,6 @@
 
 LOCAL_PATH := device/motorola/xt897
 
-# Don't use common resources
-TARGET_USES_MOTOROLA_MSM8960_COMMON_LIBLIGHT := false
-TARGET_USES_MOTOROLA_MSM8960_COMMON_IDC := false
-TARGET_USES_MOTOROLA_MSM8960_COMMON_KEYCHARS := false
-TARGET_USES_MOTOROLA_MSM8960_COMMON_KEYLAYOUT := false
-
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8960-common
 TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
