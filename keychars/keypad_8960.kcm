@@ -358,7 +358,7 @@ key SEMICOLON {
     ctrl, alt, meta:                    none
 }
 
-key GRAVE {
+key ALT_RIGHT {
     label:                              '\uef01'
     base:                               '\uef01'
     shift, capslock:                    '\uef01'
@@ -369,32 +369,6 @@ key APOSTROPHE {
     label, number:                      '\''
     base:                               '\''
     shift:                              '"'
-    ctrl, alt, meta:                    none
-}
-
-### Additional charactes ###
-
-key DPAD_LEFT {
-    base:                               fallback DPAD_LEFT
-    shift:                              '<'
-    ctrl, alt, meta:                    none
-}
-
-key DPAD_RIGHT {
-    base:                               fallback DPAD_RIGHT
-    shift:                              '>'
-    ctrl, alt, meta:                    none
-}
-
-key DPAD_UP {
-    base:                               fallback DPAD_UP
-    shift:                              '^'
-    ctrl, alt, meta:                    none
-}
-
-key DPAD_DOWN {
-    base:                               fallback DPAD_DOWN
-    shift:                              '|'
     ctrl, alt, meta:                    none
 }
 
