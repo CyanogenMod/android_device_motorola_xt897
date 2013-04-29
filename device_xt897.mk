@@ -25,8 +25,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 #misc
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.log.aplogd.enable=1 \
-    ro.product.model.exif=XT897
+    persist.log.aplogd.enable=1
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -36,7 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGsmDevice=1 \
     ro.telephony.ril.v3=signalstrength \
-    DEVICE_PROVISIONED=1 \
     ro.telephony.default_network=3
 
 # IDC
