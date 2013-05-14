@@ -41,7 +41,8 @@ static struct light_state_t g_battery;
 
 static int g_attention;
 static int g_charge_led_active;
-static int g_kbd_brightness;
+static int g_lcd_brightness;
+static int g_kbd_on;
 static int g_caps_on;
 
 /* LED */
@@ -67,7 +68,8 @@ void init_globals(void)
 	memset(&g_notification, 0, sizeof(g_notification));
 
 	g_charge_led_active = 0;
-	g_kbd_brightness = -1;
+	g_lcd_brightness = -1;
+	g_kbd_on = -1;
 	g_caps_on = -1;
 	g_attention = -1;
 }
@@ -141,10 +143,19 @@ set_light_backlight(struct light_device_t* dev,
         struct light_state_t const* state)
 {
 	int err = 0;
-	int brightness = rgb_to_brightness(state);
-
+	int lcd_brightness = rgb_to_brightness(state);
 	pthread_mutex_lock(&g_lock);
-	err = write_int(LCD_FILE, brightness);
+
+	if (g_lcd_brightness < 0 ||
+	    (g_lcd_brightness != lcd_brightness))
+	{
+		err = write_int(LCD_FILE, lcd_brightness);
+		if (!err && g_kbd_on)
+			err = write_int(KEYBOARD_FILE, lcd_brightness);
+	}
+
+	g_lcd_brightness = lcd_brightness;
+
 	pthread_mutex_unlock(&g_lock);
 
 	return err;
@@ -155,17 +166,17 @@ set_light_keyboard(struct light_device_t* dev,
         struct light_state_t const* state)
 {
 	int err = 0;
-	int brightness = rgb_to_brightness(state);
+	int kbd_on = rgb_to_brightness(state) > 0;
 	pthread_mutex_lock(&g_lock);
 
-		if (g_kbd_brightness < 0 ||
-	    (g_kbd_brightness == 0 && brightness > 0) ||
-	    (g_kbd_brightness > 0 && brightness == 0))
+	if (g_kbd_on < 0 ||
+	    (!g_kbd_on && kbd_on > 0) ||
+	    (g_kbd_on > 0 && !kbd_on))
 	{
-		err = write_int(KEYBOARD_FILE, brightness);
+		err = write_int(KEYBOARD_FILE, kbd_on ? g_lcd_brightness : 0);
 	}
 
-	g_kbd_brightness = brightness;
+	g_kbd_on = kbd_on;
 
 	pthread_mutex_unlock(&g_lock);
 	return err;
