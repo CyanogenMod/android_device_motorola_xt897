@@ -81,4 +81,7 @@
     <!-- Enables swipe versus poly-finger touch disambiguation in the KeyboardView -->
     <bool name="config_swipeDisambiguation">true</bool>
 
+    <!-- Pie service: Thickness of the active trigger fields around the screen border -->
+    <dimen name="pie_trigger_thickness">15dp</dimen>
+
 </resources>
