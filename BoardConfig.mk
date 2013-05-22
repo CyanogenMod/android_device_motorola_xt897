@@ -15,6 +15,7 @@ BOARD_HAVE_NFC := true
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8960-common
 TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8960_mmi_gsm_defconfig
 
 # copy all kernel modules under the "kernel/modules" directory to system/lib/modules
 PRODUCT_COPY_FILES += $(shell \
