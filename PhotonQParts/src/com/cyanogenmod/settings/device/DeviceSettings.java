@@ -34,6 +34,12 @@ public class DeviceSettings extends PreferenceActivity implements
 
     private static final String KEYPAD_MPLANG_DEFAULT = "auto";
 
+    private static final String REPORT_GPRS_AS_EDGE_PREF = "pref_report_gprs_as_edge";
+
+    private static final String REPORT_GPRS_AS_EDGE_PROP = "persist.sys.report_gprs_as_edge";
+
+    private static final String REPORT_GPRS_AS_EDGE_DEFAULT = "1";
+
     private static String mKeypadMultipressSum;
 
     private static String mKeypadMplangSum;
@@ -41,6 +47,8 @@ public class DeviceSettings extends PreferenceActivity implements
     private static ListPreference mKeypadMultipressPref;
 
     private static ListPreference mKeypadMplangPref;
+
+    private static CheckBoxPreference mReportGprsAsEdgePref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,6 +71,11 @@ public class DeviceSettings extends PreferenceActivity implements
         mKeypadMplangPref.setValue(keypadMplang);
         mKeypadMplangPref.setSummary(String.format(mKeypadMplangSum, mKeypadMplangPref.getEntry()));
         mKeypadMplangPref.setOnPreferenceChangeListener(this);
+
+        mReportGprsAsEdgePref = (CheckBoxPreference) prefSet.findPreference(REPORT_GPRS_AS_EDGE_PREF);
+        String reportGprsAsEdgeVal = SystemProperties.get(REPORT_GPRS_AS_EDGE_PROP, REPORT_GPRS_AS_EDGE_DEFAULT);
+        mReportGprsAsEdgePref.setChecked(reportGprsAsEdgeVal.equals("1"));
+        mReportGprsAsEdgePref.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -84,6 +97,14 @@ public class DeviceSettings extends PreferenceActivity implements
             SystemProperties.set(KEYPAD_MPLANG_PERSIST_PROP, keypadMplang);
             mKeypadMplangPref.setSummary(String.format(mKeypadMplangSum,
                     mKeypadMplangPref.getEntries()[mKeypadMplangPref.findIndexOfValue(keypadMplang)]));
+            return true;
+        } else if (preference == mReportGprsAsEdgePref) {
+            Boolean checked = (Boolean) newValue;
+            if (checked) {
+                SystemProperties.set(REPORT_GPRS_AS_EDGE_PROP, "1");
+            } else {
+                SystemProperties.set(REPORT_GPRS_AS_EDGE_PROP, "0");
+            }
             return true;
         }
         return false;
