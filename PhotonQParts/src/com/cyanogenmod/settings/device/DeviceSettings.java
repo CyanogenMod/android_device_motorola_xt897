@@ -38,7 +38,7 @@ public class DeviceSettings extends PreferenceActivity implements
 
     private static final String REPORT_GPRS_AS_EDGE_PROP = "persist.sys.report_gprs_as_edge";
 
-    private static final String REPORT_GPRS_AS_EDGE_DEFAULT = "1";
+    private static final String REPORT_GPRS_AS_EDGE_DEFAULT = "0";
 
     private static String mKeypadMultipressSum;
 
