@@ -1,14 +1,9 @@
-#config
-etc/OperatorPolicy.xml
-etc/UserPolicy.xml
-
-#touchscreen
-etc/firmware/atmxt-r2.tdat
+# proprietary file list
+# bin/filename
 
 #wcd9310
 etc/firmware/wcd9310/wcd9310_anc.bin
 etc/firmware/wcd9310/wcd9310_mbhc.bin
 
-#libs
-lib/libdataencrypt_tpa.so
-lib/libpkip.so
+#touchscreen
+etc/firmware/atmxt-r2.tdat
