@@ -15,6 +15,9 @@
             android:summary="@string/pref_keypad_mplang_summary"
             android:entries="@array/pref_keypad_mplang_entries"
             android:entryValues="@array/pref_keypad_mplang_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/other"
+        android:key="pref_category_other">
         <CheckBoxPreference
             android:key="pref_report_gprs_as_edge"
             android:title="@string/pref_report_gprs_as_edge_title"

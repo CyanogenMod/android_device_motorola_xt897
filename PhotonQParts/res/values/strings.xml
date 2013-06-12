@@ -10,6 +10,8 @@
     <string name="pref_keypad_mplang_title">Multipress language</string>
     <string name="pref_keypad_mplang_summary">Language selection for entering alternate characters via multipress feature.\nCurrently set to: %s</string>
 
+    <string name="other">Other</string>
+
     <string name="pref_report_gprs_as_edge_title">Report GPRS as EDGE</string>
     <string name="pref_report_gprs_as_edge_summary">Report GPRS as EDGE to significantly improve connection speed if you live in EDGE covered area.</string>
 
