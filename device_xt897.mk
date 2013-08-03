@@ -29,10 +29,6 @@ PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
     sqlite3
 
-#custom settings
-PRODUCT_PACKAGES += \
-    PhotonQParts
-
 PRODUCT_LOCALES := en_US
 PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
