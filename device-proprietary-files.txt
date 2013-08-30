@@ -1,9 +1,5 @@
 # proprietary file list
 # bin/filename
 
-#wcd9310
-etc/firmware/wcd9310/wcd9310_anc.bin
-etc/firmware/wcd9310/wcd9310_mbhc.bin
-
 #touchscreen
 etc/firmware/atmxt-r2.tdat
