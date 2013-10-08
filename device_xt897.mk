@@ -34,6 +34,10 @@ PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+# Nfc
+PRODUCT_PACKAGES += \
+    nfc.msm8960
+
 #misc
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.aplogd.enable=1
