@@ -82,6 +82,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keychars/keypad_8960.kcm:system/usr/keychars/keypad_8960.kcm
 
+# Alternate optional key maps
+PRODUCT_PACKAGES += \
+    AsantiKeypad
+
 $(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
 $(call inherit-product, vendor/motorola/xt897/xt897-vendor.mk)
 
