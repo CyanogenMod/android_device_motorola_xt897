@@ -91,16 +91,9 @@
             32 - Camera
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">32</integer>
-
-    <!-- Indicates that the device has Single-stage Camera key
-         (without "Focus" state) instead of Dual-stage. -->
-    <bool name="config_singleStageCameraKey">true</bool>
+    <integer name="config_deviceHardwareKeys">0</integer>
 
     <!-- Enables swipe versus poly-finger touch disambiguation in the KeyboardView -->
     <bool name="config_swipeDisambiguation">true</bool>
-
-    <!-- Pie service: Thickness of the active trigger fields around the screen border -->
-    <dimen name="pie_trigger_thickness">15dp</dimen>
 
 </resources>
