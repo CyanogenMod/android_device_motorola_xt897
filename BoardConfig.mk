@@ -29,6 +29,9 @@
 
 LOCAL_PATH := device/motorola/xt897
 
+# Use common media profile
+TARGET_USES_MOTOROLA_MSM8960_COMMON_MEDIA_PROFILES := true
+
 # NFC
 BOARD_HAVE_NFC := true
 
