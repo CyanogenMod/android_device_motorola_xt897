@@ -34,6 +34,9 @@ PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+# Use common media profile
+TARGET_USES_MOTOROLA_MSM8960_COMMON_MEDIA_PROFILES := true
+
 # Nfc
 PRODUCT_PACKAGES += \
     nfc.msm8960
