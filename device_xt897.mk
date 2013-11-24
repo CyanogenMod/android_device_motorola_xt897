@@ -51,9 +51,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #telephony
 PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnGsmDevice=1 \
-    ro.telephony.ril.v3=signalstrength \
-    ro.telephony.default_network=3 \
+    telephony.lteOnCdmaDevice=1 \
+    ro.config.svdo=true \
+    ro.config.svlte1x=true \
+    ro.cdma.nbpcd=0 \
+    ro.cdma.home.operator.isnan=1 \
+    ro.telephony.gsm-routes-us-smsc=1 \
+    ro.cdma.otaspnumschema=SELC,1,80,99 \
+    persist.radio.mode_pref_nv10=1 \
+    persist.radio.vrte_logic=2 \
+    persist.radio.skip_data_check=1 \
+    persist.ril.max.crit.qmi.fails=4 \
+    ro.cdma.home.operator.numeric=310120 \
+    ro.cdma.home.operator.alpha=Sprint \
+    ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
+    ro.telephony.default_network=10 \
+    ro.mot.ignore_csim_appid=true \
+    ro.cdma.subscription=1 \
+    DEVICE_PROVISIONED=1 \
     persist.sys.report_gprs_as_edge=1
 
 # IDC
