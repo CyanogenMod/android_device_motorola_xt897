@@ -176,7 +176,7 @@ set_light_keyboard(struct light_device_t* dev,
 		err = write_int(KEYBOARD_FILE, on ? g_lcd_brightness : 0);
 	}
 
-	g_kbd_on = kbd_on;
+	g_kbd_on = on;
 
 	pthread_mutex_unlock(&g_lock);
 	return err;
