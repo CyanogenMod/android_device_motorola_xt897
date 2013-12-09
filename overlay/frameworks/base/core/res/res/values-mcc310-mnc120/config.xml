@@ -15,6 +15,7 @@
 -->
 
 <resources>
-    <!-- Flag indicating if the phone is a world phone -->
-    <bool name="world_phone">true</bool>
+    <!-- If this value is true, The mms content-disposition field is supported correctly.
+         If false, Content-disposition fragments are ignored -->
+    <bool name="config_mms_content_disposition_support">false</bool>
 </resources>
