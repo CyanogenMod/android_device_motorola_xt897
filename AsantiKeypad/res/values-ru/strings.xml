@@ -2,12 +2,12 @@
 <resources>
     <string name="app_name">Asanti Keypad</string>
     <string name="keyboard_layouts_label">Photon Q keypad</string>
-    <string name="keypad_asanti_qwerty_label">english</string>
+    <string name="keypad_asanti_qwerty_label">английский</string>
     <string name="keypad_asanti_qwertz_label">Asanti QWERTZ</string>
     <string name="keypad_asanti_czech_qwerty_label">Asanti Czech QWERTY</string>
     <string name="keypad_asanti_czech_qwertz_label">Asanti Czech QWERTZ</string>
     <string name="keypad_asanti_cro_qwerty_label">Asanti Croatian QWERTY</string>
     <string name="keypad_asanti_cro_qwertz_label">Asanti Croatian QWERTZ</string>
-    <string name="keyboard_nnmrz_layout_russian">russian</string>
-    <string name="keyboard_nnmrz_layout_belorussian">belorussian</string>
+    <string name="keyboard_nnmrz_layout_russian">русский</string>
+    <string name="keyboard_nnmrz_layout_belorussian">белорусский</string>
 </resources>
