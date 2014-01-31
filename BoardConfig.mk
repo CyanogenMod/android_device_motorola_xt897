@@ -29,6 +29,9 @@
 
 LOCAL_PATH := device/motorola/xt897
 
+# Use common resources
+TARGET_USES_MOTOROLA_MSM8960_COMMON_LIBLIGHT := true
+
 # NFC
 BOARD_HAVE_NFC := true
 
