@@ -71,20 +71,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
     persist.sys.report_gprs_as_edge=1
 
-# IDC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
-    $(LOCAL_PATH)/idc/keypad_8960.idc:system/usr/idc/keypad_8960.idc \
-    $(LOCAL_PATH)/idc/gpio-keys.idc:system/usr/idc/gpio-keys.idc
-
-# keylayouts
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl
-
-# Keychars
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keychars/keypad_8960.kcm:system/usr/keychars/keypad_8960.kcm
-
 # Alternate optional key maps
 PRODUCT_PACKAGES += \
     AsantiKeypad
