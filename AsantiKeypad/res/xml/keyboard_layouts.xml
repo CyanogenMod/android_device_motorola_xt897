@@ -23,4 +23,12 @@
     <keyboard-layout android:name="keypad_asanti_cro_qwertz"
             android:label="@string/keypad_asanti_cro_qwertz_label"
             android:keyboardLayout="@raw/keypad_asanti_cro_qwertz" />
+    
+    <keyboard-layout android:name="keyboard_nnmrz_layout_russian"
+            android:label="@string/keyboard_nnmrz_layout_russian"
+            android:keyboardLayout="@raw/keyboard_nnmrz_layout_russian" />
+    
+    <keyboard-layout android:name="keyboard_nnmrz_layout_belorussian"
+            android:label="@string/keyboard_nnmrz_layout_belorussian"
+            android:keyboardLayout="@raw/keyboard_nnmrz_layout_belorussian" />
 </keyboard-layouts>
