@@ -75,6 +75,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     AsantiKeypad
 
+$(call inherit-product, device/motorola/qcom-common/idc/idc.mk)
+$(call inherit-product, device/motorola/qcom-common/keychars/keychars.mk)
+$(call inherit-product, device/motorola/qcom-common/keylayout/keylayout.mk)
 $(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
 $(call inherit-product, vendor/motorola/xt897/xt897-vendor.mk)
 
