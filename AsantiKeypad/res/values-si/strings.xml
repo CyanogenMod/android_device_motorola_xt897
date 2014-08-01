@@ -16,12 +16,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Teclado Asanti</string>
-  <string name="keyboard_layouts_label">Teclado Photon Q</string>
+  <string name="app_name">Asanti යතුරු පෑඩය</string>
+  <string name="keyboard_layouts_label">Photon Q යතුරු පෑඩය</string>
   <string name="keypad_asanti_qwerty_label">Asanti QWERTY</string>
   <string name="keypad_asanti_qwertz_label">Asanti QWERTZ</string>
-  <string name="keypad_asanti_czech_qwerty_label">Asanti QWERTY checo</string>
-  <string name="keypad_asanti_czech_qwertz_label">Asanti QWERTZ checo</string>
-  <string name="keypad_asanti_cro_qwerty_label">Asanti QWERTY croata</string>
-  <string name="keypad_asanti_cro_qwertz_label">Asanti QWERTZ croata</string>
+  <string name="keypad_asanti_czech_qwerty_label">Asanti QWERTY චෙකොස්ලෝවියානු</string>
+  <string name="keypad_asanti_czech_qwertz_label">Asanti QWERTZ චෙකොස්ලෝවියානු</string>
+  <string name="keypad_asanti_cro_qwerty_label">Asanti QWERTY ක්‍රොයේෂියානු</string>
+  <string name="keypad_asanti_cro_qwertz_label">Asanti QWERTZ ක්‍රොයේෂියානු</string>
 </resources>
