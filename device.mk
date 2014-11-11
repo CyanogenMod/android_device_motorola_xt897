@@ -21,7 +21,7 @@ LOCAL_PATH := device/motorola/xt897
 # xt897 specific overlay
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Audio configuration
