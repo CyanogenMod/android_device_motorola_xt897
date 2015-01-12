@@ -1,7 +1,7 @@
-# proprietary file list
-# bin/filename
-lib/libqmiservices.so
-lib/libril-qc-qmi-1.so
+# device specific proprietary file list
 
-#touchscreen
+# Audio
+lib/libaudcal.so
+
+# Touch firmware
 etc/firmware/atmxt-r2.tdat

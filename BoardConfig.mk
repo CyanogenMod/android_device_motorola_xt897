@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,18 +21,18 @@
 # definition file).
 #
 
-# inherit from platform common
--include device/motorola/msm8960-common/BoardConfigCommon.mk
+-include device/motorola/msm8960_jbbl-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/motorola/xt897/BoardConfigVendor.mk
 
 LOCAL_PATH := device/motorola/xt897
 
-#bluetooth
+# Assert
+TARGET_OTA_ASSERT_DEVICE := xt897,asanti
+
+# Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
-#TWRP
+# TWRP
 DEVICE_RESOLUTION := 540x960
-
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 4294967296

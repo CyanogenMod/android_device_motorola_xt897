@@ -1,9 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),xt897)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-endif
-
-ifeq ($(TARGET_DEVICE),xt897c)
+ifneq ($(filter xt897 xt897c,$(TARGET_DEVICE)),)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
