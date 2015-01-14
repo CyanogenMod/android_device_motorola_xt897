@@ -29,7 +29,7 @@
 LOCAL_PATH := device/motorola/xt897
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := xt897,asanti
+TARGET_OTA_ASSERT_DEVICE := xt897,asanti_c
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
