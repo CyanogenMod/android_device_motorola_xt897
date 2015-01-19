@@ -14,15 +14,6 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL xt926 devices, and
-# are also specific to xt897 devices
-#
-# Everything in this directory will become public
-
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
 $(call inherit-product, device/motorola/msm8960_jbbl-common/msm8960.mk)
 
 LOCAL_PATH := device/motorola/xt897
@@ -30,16 +21,8 @@ LOCAL_PATH := device/motorola/xt897
 # xt897 specific overlay
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# sqlite3
-PRODUCT_PACKAGES += \
-    sqlite3
-
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-
-# Misc
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.log.aplogd.enable=1
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -65,15 +48,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.mot.ignore_csim_appid=true \
     ro.cdma.subscription=1 \
     DEVICE_PROVISIONED=1 \
-    persist.sys.report_gprs_as_edge=1
 
 # Alternate optional key maps
 PRODUCT_PACKAGES += \
     AsantiKeypad
 
-$(call inherit-product, device/motorola/qcom-common/idc/idc.mk)
-$(call inherit-product, device/motorola/qcom-common/keychars/keychars.mk)
-$(call inherit-product, device/motorola/qcom-common/keylayout/keylayout.mk)
-$(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
 $(call inherit-product, vendor/motorola/xt897/xt897-vendor.mk)
 
