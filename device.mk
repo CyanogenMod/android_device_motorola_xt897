@@ -24,6 +24,14 @@ PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+# NFC
+PRODUCT_PACKAGES += \
+    nfc.msm8960
+
+# Alternate optional key maps
+PRODUCT_PACKAGES += \
+    AsantiKeypad
+
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240 \
@@ -47,11 +55,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=10 \
     ro.mot.ignore_csim_appid=true \
     ro.cdma.subscription=1 \
-    DEVICE_PROVISIONED=1 \
+    DEVICE_PROVISIONED=1
 
-# Alternate optional key maps
-PRODUCT_PACKAGES += \
-    AsantiKeypad
-
+$(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
 $(call inherit-product, vendor/motorola/xt897/xt897-vendor.mk)
 
