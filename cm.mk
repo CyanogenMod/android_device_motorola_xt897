@@ -22,7 +22,3 @@ TARGET_VENDOR_DEVICE_NAME := asanti_c
 
 $(call inherit-product, device/motorola/xt897/full_xt897.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=motorola/XT897_us_spr/asanti_c:4.1.2/9.8.2Q-122_XT897_FFW-5/6:user/release-keys \
-    PRIVATE_BUILD_DESC="XT897_us_spr-user 4.1.2 9.8.2Q-122_XT897_FFW-5 6 release-keys"
-
