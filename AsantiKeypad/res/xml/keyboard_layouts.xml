@@ -4,23 +4,47 @@
             android:label="@string/keypad_asanti_qwerty_label"
             android:keyboardLayout="@raw/keypad_asanti_qwerty" />
 
+    <keyboard-layout android:name="keypad_asanti_capsshift_qwerty"
+            android:label="@string/keypad_asanti_capsshift_qwerty_label"
+            android:keyboardLayout="@raw/keypad_asanti_capsshift_qwerty" />
+
     <keyboard-layout android:name="keypad_asanti_qwertz"
             android:label="@string/keypad_asanti_qwertz_label"
             android:keyboardLayout="@raw/keypad_asanti_qwertz" />
+
+    <keyboard-layout android:name="keypad_asanti_capsshift_qwertz"
+            android:label="@string/keypad_asanti_capsshift_qwertz_label"
+            android:keyboardLayout="@raw/keypad_asanti_capsshift_qwertz" />
 
     <keyboard-layout android:name="keypad_asanti_czech_qwerty"
             android:label="@string/keypad_asanti_czech_qwerty_label"
             android:keyboardLayout="@raw/keypad_asanti_czech_qwerty" />
 
+    <keyboard-layout android:name="keypad_asanti_capsshift_czech_qwerty"
+            android:label="@string/keypad_asanti_capsshift_czech_qwerty_label"
+            android:keyboardLayout="@raw/keypad_asanti_capsshift_czech_qwerty" />
+
     <keyboard-layout android:name="keypad_asanti_czech_qwertz"
             android:label="@string/keypad_asanti_czech_qwertz_label"
             android:keyboardLayout="@raw/keypad_asanti_czech_qwertz" />
+
+    <keyboard-layout android:name="keypad_asanti_capsshift_czech_qwertz"
+            android:label="@string/keypad_asanti_capsshift_czech_qwertz_label"
+            android:keyboardLayout="@raw/keypad_asanti_capsshift_czech_qwertz" />
 
     <keyboard-layout android:name="keypad_asanti_cro_qwerty"
             android:label="@string/keypad_asanti_cro_qwerty_label"
             android:keyboardLayout="@raw/keypad_asanti_cro_qwerty" />
 
+    <keyboard-layout android:name="keypad_asanti_capsshift_cro_qwerty"
+            android:label="@string/keypad_asanti_capsshift_cro_qwerty_label"
+            android:keyboardLayout="@raw/keypad_asanti_capsshift_cro_qwerty" />
+
     <keyboard-layout android:name="keypad_asanti_cro_qwertz"
             android:label="@string/keypad_asanti_cro_qwertz_label"
             android:keyboardLayout="@raw/keypad_asanti_cro_qwertz" />
+
+    <keyboard-layout android:name="keypad_asanti_capsshift_cro_qwertz"
+            android:label="@string/keypad_asanti_capsshift_cro_qwertz_label"
+            android:keyboardLayout="@raw/keypad_asanti_capsshift_cro_qwertz" />
 </keyboard-layouts>
