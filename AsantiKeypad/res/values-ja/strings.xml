@@ -18,10 +18,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Asantiキーパッド</string>
   <string name="keyboard_layouts_label">Photon Qキーパッド</string>
-  <string name="keypad_asanti_qwerty_label">Asanti QWERTY</string>
-  <string name="keypad_asanti_qwertz_label">Asanti QWERTZ</string>
-  <string name="keypad_asanti_czech_qwerty_label">Asantiチェコ語QWERTY</string>
-  <string name="keypad_asanti_czech_qwertz_label">Asantiチェコ語QWERTZ</string>
-  <string name="keypad_asanti_cro_qwerty_label">Asantiクロアチア語QWERTY</string>
-  <string name="keypad_asanti_cro_qwertz_label">Asantiクロアチア語QWERTZ</string>
+  <string name="keypad_asanti_qwerty_label">Asanti v1西ドイツQWERTY</string>
+  <string name="keypad_asanti_qwertz_label">Asanti v1西ドイツQWERTZ</string>
+  <string name="keypad_asanti_czech_qwerty_label">Asanti v1チェコ語QWERTY</string>
+  <string name="keypad_asanti_czech_qwertz_label">Asanti v1チェコ語QWERTZ</string>
+  <string name="keypad_asanti_cro_qwerty_label">Asanti v1クロアチア語QWERTY</string>
+  <string name="keypad_asanti_cro_qwertz_label">Asanti v1クロアチア語QWERTZ</string>
+  <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2西ドイツQWERTY</string>
+  <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2西ドイツQWERTZ</string>
+  <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2チェコ語QWERTY</string>
+  <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2チェコ語QWERTZ</string>
+  <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2クロアチア語QWERTY</string>
+  <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2クロアチア語QWERTZ</string>
 </resources>

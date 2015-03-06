@@ -16,12 +16,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Klávesnice Asanti</string>
-  <string name="keyboard_layouts_label">Klávesnice Photon Q</string>
-  <string name="keypad_asanti_qwerty_label">Asanti QWERTY</string>
-  <string name="keypad_asanti_qwertz_label">Asanti QWERTZ</string>
-  <string name="keypad_asanti_czech_qwerty_label">Asanti česká QWERTY</string>
-  <string name="keypad_asanti_czech_qwertz_label">Asanti česká QWERTZ</string>
-  <string name="keypad_asanti_cro_qwerty_label">Asanti chorvatská QWERTY</string>
-  <string name="keypad_asanti_cro_qwertz_label">Asanti chorvatská QWERTZ</string>
+  <string name="app_name">Asanti klávesnice</string>
+  <string name="keyboard_layouts_label">Photon Q klávesnice</string>
+  <string name="keypad_asanti_qwerty_label">Asanti v1 západní/německá QWERTY</string>
+  <string name="keypad_asanti_qwertz_label">Asanti v1 západní/německá QWERTZ</string>
+  <string name="keypad_asanti_czech_qwerty_label">Asanti v1 česká QWERTY</string>
+  <string name="keypad_asanti_czech_qwertz_label">Asanti v1 česká QWERTZ</string>
+  <string name="keypad_asanti_cro_qwerty_label">Asanti v1 chorvatská QWERTY</string>
+  <string name="keypad_asanti_cro_qwertz_label">Asanti v1 chorvatská QWERTZ</string>
+  <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 západní/německá QWERTY</string>
+  <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2 západní/německá QWERTZ</string>
+  <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2 česká QWERTY</string>
+  <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2 česká QWERTZ</string>
+  <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 chorvatská QWERTY</string>
+  <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 chorvatská QWERTZ</string>
 </resources>
