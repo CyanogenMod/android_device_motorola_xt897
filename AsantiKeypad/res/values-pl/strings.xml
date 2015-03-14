@@ -18,4 +18,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Klawiatura Asanti</string>
   <string name="keyboard_layouts_label">Klawiatura Photon Q</string>
+  <string name="keypad_asanti_qwerty_label">Asanti v1 zachodni/Niemiecki QWERTY</string>
+  <string name="keypad_asanti_qwertz_label">Asanti v1 zachodni/Niemiecki QWERTZ</string>
+  <string name="keypad_asanti_czech_qwerty_label">Asanti v1 Czeski QWERTY</string>
+  <string name="keypad_asanti_czech_qwertz_label">Asanti v1 Czeski QWERTZ</string>
+  <string name="keypad_asanti_cro_qwerty_label">Asanti v1 Chorwacki QWERTY</string>
+  <string name="keypad_asanti_cro_qwertz_label">Asanti v1 Chorwacki QWERTZ</string>
+  <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 zachodni/Niemiecki QWERTY</string>
+  <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2 zachodni/Niemiecki QWERTZ</string>
+  <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2 Czeski QWERTY</string>
+  <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2 Czeski QWERTZ</string>
+  <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 Chorwacki QWERTY</string>
+  <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 Chorwacki QWERTZ</string>
 </resources>
