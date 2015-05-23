@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">تەختەکلیلی ئاسانتی</string>
-  <string name="keyboard_layouts_label">تەختە کلیلی فۆتۆن کیو</string>
+  <string name="keyboard_layouts_label">تەختە کلیلی فۆئاواز کیو</string>
   <string name="keypad_asanti_qwerty_label">تەختە گەورەی ئاسانتی ئەلمانی</string>
   <string name="keypad_asanti_qwertz_label">تەختە گەورەی ئاسانتی ئەلمانی</string>
 </resources>
