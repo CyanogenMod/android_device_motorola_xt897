@@ -8,8 +8,7 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/qcom-common/overlay-cm
 
 # Media
 PRODUCT_COPY_FILES += \
-    device/motorola/msm8960_jbbl-common/config/media_codecs.xml:system/etc/media_codecs.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml
+    device/motorola/msm8960_jbbl-common/config/media_codecs.xml:system/etc/media_codecs.xml
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 540
