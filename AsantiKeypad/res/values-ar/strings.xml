@@ -16,6 +16,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">لوحة مفاتيح Asanti</string>
+  <string name="keyboard_layouts_label">لوحة مفاتيح Photon Q</string>
   <string name="keypad_asanti_qwerty_label">QWERTY Asanti v1 الغربية/الألمانية</string>
   <string name="keypad_asanti_qwertz_label">QWERTZ Asanti v1 الغربية/الألمانية</string>
   <string name="keypad_asanti_czech_qwerty_label">Asanti v1 QWERTY التشيكية</string>
