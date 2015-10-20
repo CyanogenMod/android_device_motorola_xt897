@@ -34,7 +34,7 @@ TARGET_OTA_ASSERT_DEVICE := xt897,asanti_c
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/motorola/xt897/init/init_xt897.c
+TARGET_LIBINIT_DEFINES_FILE := device/motorola/xt897/init/init_xt897.cpp
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
