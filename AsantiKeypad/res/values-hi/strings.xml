@@ -18,16 +18,28 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">अशांति कीपैड</string>
   <string name="keyboard_layouts_label">फ़ोटोन क्यू कीपैड</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwerty_label">अशांति वी1 पश्चिमी/जर्मन QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwertz_label">अशांति वी1 पश्चिमी/जर्मन QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_czech_qwerty_label">अशांति वी1 चेक QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_czech_qwertz_label">अशांति वी1 चेक QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwerty_label">अशांति वी1 क्रोएशियाई QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwertz_label">अशांति वी1 क्रोएशियाई QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwerty_label">अशांति वी2 पश्चिमी/जर्मन QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwertz_label">अशांति वी2 पश्चिमी/जर्मन QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_czech_qwerty_label">अशांति वी2 चेक QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_czech_qwertz_label">अशांति वी2 चेक QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwerty_label">अशांति वी2 क्रोएशियाई QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwertz_label">अशांति वी2 क्रोएशियाई QWERTZ</string>
 </resources>

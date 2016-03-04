@@ -18,16 +18,28 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Asanti-Tastatur</string>
   <string name="keyboard_layouts_label">Photon Q-Tastatur</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwerty_label">Asanti v1 Westlech/Däitsch QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwertz_label">Asanti v1 Westlech/Däitsch QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_czech_qwerty_label">Asanti v1 Tschechesch QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_czech_qwertz_label">Asanti v1 Tschechesch QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwerty_label">Asanti v1 Kroatesch QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwertz_label">Asanti v1 Kroatesch QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 Westlech/Däitsch QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2 Westlech/Däitsch QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2 Tschechesch QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2 Tschechesch QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 Kroatesch QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 Kroatesch QWERTZ</string>
 </resources>

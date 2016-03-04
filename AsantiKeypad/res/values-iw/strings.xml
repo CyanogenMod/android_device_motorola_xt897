@@ -18,16 +18,28 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">מקלדת Asanti</string>
   <string name="keyboard_layouts_label">מקלדת Photon Q</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwerty_label">Asanti v1 מערבי/גרמני QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwertz_label">Asanti v1 מערבי/גרמני QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_czech_qwerty_label">Asanti v1 צ\'כי QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_czech_qwertz_label">Asanti v1 צ\'כי QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwerty_label">Asanti v1 קרואטי QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwertz_label">Asanti v1 קרואטי QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 מערבי/גרמני QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2 מערבי/גרמני QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2 צ\'כי QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2 צ\'כי QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 קרואטי QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 קרואטי QWERTZ</string>
 </resources>
