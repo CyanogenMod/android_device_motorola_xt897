@@ -16,16 +16,30 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">అసాన్టి కీ పాడ్</string>
+  <string name="keyboard_layouts_label">ఫోటాన్ క్యు కీ పాడ్</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_qwerty_label">అసాన్టి v1 వెస్ట్రన్/జర్మన్ క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_qwertz_label">అసాన్టి v1 వెస్ట్రన్/జర్మన్ క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_czech_qwerty_label">అసాన్టి v1 Czech క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_czech_qwertz_label">అసాన్టి v1 Czech క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_cro_qwerty_label">అసాన్టి v1 Croatian క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_cro_qwertz_label">అసాన్టి v1 Croatian క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_qwerty_label">అసాన్టి v2 వెస్ట్రన్/జర్మన్ క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_qwertz_label">అసాన్టి v2 వెస్ట్రన్/జర్మన్ క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_czech_qwerty_label">అసాన్టి v2 Czech క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_czech_qwertz_label">అసాన్టి v2 Czech క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_cro_qwerty_label">అసాన్టి v2 Croatian క్వేర్ట్టి</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_cro_qwertz_label">అసాన్టి v2 Croatian క్వేర్ట్టి</string>
 </resources>

@@ -16,16 +16,30 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">ଅସନ୍ତି କୀବୋର୍ଡ</string>
+  <string name="keyboard_layouts_label">ଫୋଟନ୍‍ Q କୀପାର୍ଡ୍‍</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_qwerty_label">ଅସନ୍ତି v1 ୱେଷ୍ଟର୍ଣ୍ଣ/ଜର୍ମାନ୍‍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_qwertz_label">ଅସନ୍ତି v1 ୱେଷ୍ଟର୍ଣ୍ଣ/ଜର୍ମାନ୍‍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_czech_qwerty_label">ଅସନ୍ତି v1 ସିଜେକ୍‍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_czech_qwertz_label">ଅସନ୍ତି v1 ସିଜେକ୍‍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_cro_qwerty_label">ଅସନ୍ତି v1 କ୍ରୋଆଟିଆନ୍‍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_cro_qwertz_label">ଅସନ୍ତି v1 କ୍ରୋଆଟିଆନ୍‍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_qwerty_label">ଅସନ୍ତି v2  ୱେଷ୍ଟର୍ଣ୍ଣ/ଜର୍ମାନ୍‍  QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_qwertz_label">ଅସନ୍ତି v2  ୱେଷ୍ଟର୍ଣ୍ଣ/ଜର୍ମାନ୍‍  QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_czech_qwerty_label">ଅସନ୍ତି v2 ସିଜେକ୍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_czech_qwertz_label">ଅସନ୍ତି v2 ସିଜେକ୍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_cro_qwerty_label">ଅସନ୍ତି v2 କ୍ରୋଆଟିଆନ୍ QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_cro_qwertz_label">ଅସନ୍ତି v2 କ୍ରୋଆଟିଆନ୍ QWERTY</string>
 </resources>

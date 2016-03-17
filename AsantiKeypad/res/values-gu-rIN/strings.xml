@@ -16,16 +16,30 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Asanti કિપૅડ</string>
+  <string name="keyboard_layouts_label">Photon Q કિપૅડ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_qwerty_label">Asanti v1 પશ્ચિમિ/જર્મન QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_qwertz_label">Asanti v1 પશ્ચિમિ/જર્મન QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_czech_qwerty_label">Asanti v1 ઝેક QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_czech_qwertz_label">Asanti v1 ઝેક QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_cro_qwerty_label">Asanti v1 ક્રોએશ્યન QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_cro_qwertz_label">Asanti v1 ક્રોએશ્યન QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 પશ્ચિમિ/જર્મન QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2 પશ્ચિમિ/જર્મન QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2 ઝેક QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2 ઝેક QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 ક્રોએશ્યન QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 ક્રોએશ્યન QWERTZ</string>
 </resources>
