@@ -63,4 +63,8 @@
     <keyboard-layout android:name="keypad_asanti_capsshift_polish_qwertz"
             android:label="@string/keypad_asanti_capsshift_polish_qwertz_label"
             android:keyboardLayout="@raw/keypad_asanti_capsshift_polish_qwertz" />
+            
+    <keyboard-layout android:name="keypad_asanti_capsshift_korean_qwerty"
+            android:label="@string/keypad_asanti_capsshift_korean_qwerty_label"
+            android:keyboardLayout="@raw/keypad_asanti_capsshift_korean_qwerty" />		
 </keyboard-layouts>
