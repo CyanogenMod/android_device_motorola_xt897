@@ -18,6 +18,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">تەختەکلیلی ئاسانتی</string>
   <string name="keyboard_layouts_label">تەختە کلیلی فۆتۆن کیو</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwerty_label">تەختە گەورەی ئاسانتی ئەلمانی</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwertz_label">تەختە گەورەی ئاسانتی ئەلمانی</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
 </resources>

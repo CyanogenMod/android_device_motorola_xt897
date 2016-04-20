@@ -18,16 +18,28 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Asanti 键盘</string>
   <string name="keyboard_layouts_label">Photon Q 键盘</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwerty_label">Asanti v1 西德 QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_qwertz_label">Asanti v1 西德 QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_czech_qwerty_label">Asanti v1 捷克 QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_czech_qwertz_label">Asanti v1 捷克 QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwerty_label">Asanti v1 克罗地亚 QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwertz_label">Asanti v1 克罗地亚 QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 西德 QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2 西德 QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2 捷克 QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2 捷克 QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 克罗地亚 QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 克罗地亚 QWERTZ</string>
 </resources>
