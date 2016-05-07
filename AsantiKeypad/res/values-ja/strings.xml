@@ -19,27 +19,31 @@
   <string name="app_name">Asantiキーパッド</string>
   <string name="keyboard_layouts_label">Photon Qキーパッド</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_qwerty_label">Asanti v1西ドイツQWERTY</string>
+  <string name="keypad_asanti_qwerty_label">Asanti v1 西ドイツQWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_qwertz_label">Asanti v1西ドイツQWERTZ</string>
+  <string name="keypad_asanti_qwertz_label">Asanti v1 西ドイツQWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_czech_qwerty_label">Asanti v1チェコ語QWERTY</string>
+  <string name="keypad_asanti_czech_qwerty_label">Asanti v1 チェコ語QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_czech_qwertz_label">Asanti v1チェコ語QWERTZ</string>
+  <string name="keypad_asanti_czech_qwertz_label">Asanti v1 チェコ語QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_cro_qwerty_label">Asanti v1クロアチア語QWERTY</string>
+  <string name="keypad_asanti_cro_qwerty_label">Asanti v1 クロアチア語QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_cro_qwertz_label">Asanti v1クロアチア語QWERTZ</string>
+  <string name="keypad_asanti_cro_qwertz_label">Asanti v1 クロアチア語QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2西ドイツQWERTY</string>
+  <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 西ドイツQWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2西ドイツQWERTZ</string>
+  <string name="keypad_asanti_capsshift_qwertz_label">Asanti v2 西ドイツQWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2チェコ語QWERTY</string>
+  <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2 チェコ語QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2チェコ語QWERTZ</string>
+  <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2 チェコ語QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2クロアチア語QWERTY</string>
+  <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 クロアチア語QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2クロアチア語QWERTZ</string>
+  <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 クロアチア語QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
 </resources>

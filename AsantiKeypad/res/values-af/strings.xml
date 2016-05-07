@@ -30,6 +30,10 @@
   <string name="keypad_asanti_cro_qwerty_label">Asanti v1 Kroaties QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwertz_label">Asanti v1 Kroaties QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_polish_qwerty_label">Asanti v1 Poolse QWERTY</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_polish_qwertz_label">Asanti v1 Poolse QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 westerse/Duitse QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
@@ -42,4 +46,6 @@
   <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 Kroaties QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 Kroaties QWERTZ</string>
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
 </resources>
