@@ -31,7 +31,9 @@
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
   <string name="keypad_asanti_cro_qwertz_label">Asanti v1 크로아티아어 QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_polish_qwerty_label">Asanti v1 폴란드어 QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
+  <string name="keypad_asanti_polish_qwertz_label">Asanti v1 폴란드어 QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 웨스턴/독일어 QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
@@ -45,5 +47,7 @@
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
   <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 크로아티아어 QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_polish_qwerty_label">Asanti v2 폴란드어 QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
+  <string name="keypad_asanti_capsshift_polish_qwertz_label">Asanti v2 폴란드어 QWERTZ</string>
 </resources>
