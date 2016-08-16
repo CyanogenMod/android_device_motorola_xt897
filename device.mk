@@ -52,6 +52,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.nbpcd=0 \
     ro.telephony.default_network=10 \
     ro.cdma.subscription=1 \
+    ro.telephony.default_cdma_sub=1 \
     DEVICE_PROVISIONED=1
 
 $(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
