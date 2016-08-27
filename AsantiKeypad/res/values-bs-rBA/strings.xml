@@ -16,38 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Keypad Asanti</string>
-  <string name="keyboard_layouts_label">Keypad Photon Q</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_qwerty_label">Asanti v1 Barat/Jerman QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_qwertz_label">Asanti v1 Barat/Jerman QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_czech_qwerty_label">Asanti v1 Ceko QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_czech_qwertz_label">Asanti v1 Ceko QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_cro_qwerty_label">Asanti v1 Kroasia QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_cro_qwertz_label">Asanti v1 Kroasia QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_polish_qwerty_label">Asanti v1 Polandia QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v1' -->
-  <string name="keypad_asanti_polish_qwertz_label">Asanti v1 Polandia QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_qwerty_label">Asanti v2 Barat/Jerman QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_qwertz_label">Asanti v1 Barat/Jerman QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_czech_qwerty_label">Asanti v2 Cheska QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_czech_qwertz_label">Asanti v2 Cheska QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_cro_qwerty_label">Asanti v2 Kroasia QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_cro_qwertz_label">Asanti v2 Kroasia QWERTZ</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_polish_qwerty_label">Asanti v2 Polandia QWERTY</string>
   <!-- WARNING: The translation MUST always start with 'Asanti v2' -->
-  <string name="keypad_asanti_capsshift_polish_qwertz_label">Asanti v2 Polandia QWERTZ</string>
 </resources>
