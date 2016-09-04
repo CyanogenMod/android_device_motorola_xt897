@@ -35,38 +35,34 @@
 #include "log.h"
 #include "util.h"
 
-#define ISMATCH(a, b) (!strncmp((a), (b), PROP_VALUE_MAX))
-
 void vendor_load_properties()
 {
-    char platform[PROP_VALUE_MAX];
-    char carrier[PROP_VALUE_MAX];
-    char device[PROP_VALUE_MAX];
-    char devicename[PROP_VALUE_MAX];
-    char modelno[PROP_VALUE_MAX];
+    std::string platform;
+    std::string carrier;
+    std::string device;
+    std::string modelno;
     char hardware_variant[92];
     FILE *fp;
-    int rc;
 
-    rc = property_get("ro.board.platform", platform);
-    if (!rc || !ISMATCH(platform, ANDROID_TARGET))
+    platform = property_get("ro.board.platform");
+    if (platform != ANDROID_TARGET)
         return;
 
-    property_get("ro.boot.modelno", modelno);
-    property_get("ro.boot.carrier", carrier);
+    modelno = property_get("ro.boot.modelno");
+    carrier = property_get("ro.boot.carrier");
     fp = popen("/system/xbin/sed -n '/Hardware/,/Revision/p' /proc/cpuinfo | /system/xbin/cut -d ':' -f2 | /system/xbin/head -1", "r");
     fgets(hardware_variant, sizeof(hardware_variant), fp);
     pclose(fp);
 
     property_set("ro.product.device", "asanti_c");
     property_set("ro.product.model", "PHOTON Q");
-    if (ISMATCH(modelno, "XT897")) {
+    if (modelno == "XT897") {
         /* xt897 CSpire */
         property_set("ro.build.description", "asanti_c_cspire-user 4.1.2 9.8.2Q-122_XT897_FFW-7 8 release-keys");
         property_set("ro.build.fingerprint", "motorola/XT897_us_csp/asanti_c:4.1.2/9.8.2Q-122_XT897_FFW-7/8:user/release-keys");
         property_set("ro.cdma.home.operator.alpha", "Cspire");
         property_set("ro.cdma.home.operator.numeric", "311230");
-    } else if (ISMATCH(carrier, "sprint")) {
+    } else if (carrier == "sprint") {
         /* xt897 Sprint */
         property_set("ro.build.description", "XT897_us_spr-user 4.1.2 9.8.2Q-122_XT897_FFW-5 6 release-keys");
         property_set("ro.build.fingerprint", "motorola/XT897_us_spr/asanti_c:4.1.2/9.8.2Q-122_XT897_FFW-5/6:user/release-keys");
@@ -78,7 +74,6 @@ void vendor_load_properties()
         property_set("ro.com.google.clientidbase.yt", "android-sprint-us");
     }
 
-    property_get("ro.product.device", device);
-    strlcpy(devicename, device, sizeof(devicename));
-    INFO("Found carrier id: %s hardware:%s model no: %s Setting build properties for %s device\n", carrier, hardware_variant, modelno, devicename);
+    device = property_get("ro.product.device");
+    INFO("Found carrier id: %s hardware:%s model no: %s Setting build properties for %s device\n", carrier.c_str(), hardware_variant, modelno.c_str(), device.c_str());
 }
